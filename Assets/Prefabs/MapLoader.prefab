@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1590288016951470038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1590288016951470032}
+  - component: {fileID: 1590288016951470033}
+  m_Layer: 0
+  m_Name: MapLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1590288016951470032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590288016951470038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1304.6823, y: 516.8301, z: -1051.0137}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1590288016951470033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590288016951470038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 375c7e6cafbfffe4d97b63885bdfa4e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Width: 20
+  Height: 20
+  CellSize: 3.8
+  CellPrefabs:
+  - {fileID: 907345359353211151, guid: 56c2d0a99a367ec41be39c8063581013, type: 3}
+  - {fileID: 9069512558823603546, guid: b8eb677d634ce034f901931609682738, type: 3}
+  - {fileID: 795406656877752096, guid: 9fe3c6dc42843e34a8936c008aae69a0, type: 3}
+  - {fileID: 8897014440958158554, guid: 9b38701c8133a99459b8b5e02c727571, type: 3}
+  - {fileID: 594039846325705881, guid: 3a64d9edb855570458b8f3f40917a753, type: 3}
+  - {fileID: 5027311627568355282, guid: 69c78edbe4e20f44497e1748049093a4, type: 3}
+  - {fileID: 7423870371601034107, guid: 33208651588ddf944896d96a531202dd, type: 3}
+  - {fileID: 120504, guid: 5e817fb9f066550439c850b48a6d2cc2, type: 3}
+  CheckPointPrefabs:
+  - {fileID: 428295815132830573, guid: 1b24919355051e44ebe552ffaa40268e, type: 3}
+  - {fileID: 7591241240906068234, guid: 7421b8d3c379a3a45bfa4e36be7a265c, type: 3}
+  - {fileID: 7591241240906068234, guid: 7421b8d3c379a3a45bfa4e36be7a265c, type: 3}
