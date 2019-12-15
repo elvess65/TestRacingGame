@@ -44,7 +44,7 @@ namespace com.example.unity.map.creator
 
         public void SaveMap(string mapName)
         {
-            IMapSerializator serializator = new FileMapSerializator("Assets/Resources/Maps/" + mapName);
+            IMapSerializator serializator = new FileMapSerializator(mapName);
             serializator.SaveMap(m_Map);
         }
 
@@ -53,7 +53,7 @@ namespace com.example.unity.map.creator
             if (m_IsLevelLoaded)
                 ClearLevel();
 
-            IMapSerializator serializator = new FileMapSerializator("Assets/Resources/Maps/" + mapName);
+            IMapSerializator serializator = new FileMapSerializator(mapName);
             m_Map = serializator.LoadMap();
 
             LoaderOfMap.CreateMap(m_Map, true);

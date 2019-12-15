@@ -8,7 +8,7 @@ namespace com.example.unity.player
     {
         public Rigidbody Body;
         public float NitroAccelerationMultiplayer = 2;
-        public static float DumpSpeedTurnTime = 7;
+        public static float DumpSpeedTurnTime = 10;
 
         private IGame m_Game;
         private ISpeedProvider m_MoveSpeed;
@@ -35,7 +35,7 @@ namespace com.example.unity.player
 
         public void SetInput(float inputHorizontalAxis)
         {
-            if (inputHorizontalAxis > 0 || inputHorizontalAxis < 0)
+            if (inputHorizontalAxis > 0.5f || inputHorizontalAxis < -0.5f)
             {
                 if (!m_IsInputAvailable)
                 {

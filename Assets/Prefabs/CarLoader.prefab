@@ -46,3 +46,5 @@ MonoBehaviour:
   HUDPrefab: {fileID: 4000037387829265739, guid: a3ba3bf401ac8ff4bb8db7da7f0ee1e6,
     type: 3}
   CarPrefab: {fileID: 1699572693835628, guid: 37ec82ab8eba1384baadcaa1d88b7f72, type: 3}
+  PlayerMobileInput: {fileID: 1350965900536523376, guid: 723a3622ebca7f0438a8639f2ef1dae9,
+    type: 3}

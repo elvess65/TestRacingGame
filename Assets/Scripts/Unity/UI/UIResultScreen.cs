@@ -1,11 +1,24 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace com.example.unity.ui
 {
     public class UIResultScreen : MonoBehaviour
     {
-        public UnityEngine.UI.Image[] Stars;
-        public UnityEngine.UI.Text TimeText;
+        public Image[] Stars;
+        public Text TimeText;
+        public Button RestartButton;
+
+        private void Awake()
+        {
+            RestartButton.onClick.AddListener(RestartClickHandler);
+        }
+
+        private void RestartClickHandler()
+        {
+            SceneManager.LoadScene("RoadMap");
+        }
 
         public void ShowStars(int count)
         {

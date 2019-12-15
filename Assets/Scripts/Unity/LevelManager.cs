@@ -27,14 +27,14 @@ namespace com.example.unity
 
         public void CreateLevel(string levelName)
         {
-            IMapSerializator serializator = new FileMapSerializator("Assets/Resources/Maps/" + levelName);
+            IMapSerializator serializator = new FileMapSerializator(levelName);
             m_Map = serializator.LoadMap();
 
             LoaderMap.CreateMap(m_Map, false);
 
             CarSurface surface = new CarSurface();
             surface.AddSurface(0, 5f, 1);
-            surface.AddSurface(1, 3f, 0.4f);
+            surface.AddSurface(1, 3f, 0.7f);
 
             ICarFactory carFactory = new DefaultCarFactory();
             ICar car = carFactory.CreateCar(10, 90, surface);

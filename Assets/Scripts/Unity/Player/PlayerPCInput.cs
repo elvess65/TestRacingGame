@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace com.example.unity.player
 {
-    public class PlayerInput : MonoBehaviour
+    public class PlayerPCInput : MonoBehaviour
     {
         private UnityCar m_CarObj;
         private IGame m_Game;

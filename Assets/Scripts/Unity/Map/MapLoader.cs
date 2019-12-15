@@ -131,8 +131,10 @@ namespace com.example.unity.map
 
         public byte GetSurfaceTypeAt(IMap map, Vector3 pos)
         {
-            int x = Mathf.CeilToInt(pos.x / CellSize);
-            int y = Mathf.CeilToInt(pos.z / CellSize);
+            float halfSize = CellSize / 2;
+
+            int x = Mathf.CeilToInt((-halfSize + pos.x) / CellSize);
+            int y = Mathf.CeilToInt((-halfSize + pos.z) / CellSize);
 
             return map.GetCell(x, y).GetSurfaceType();
         }
